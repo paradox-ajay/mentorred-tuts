@@ -1,0 +1,100 @@
+
+            <h1 style="font-family: 'Lobster', cursive;">Contact Form</h1>
+            <hr/>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                       <p align="right"><b> Name:<span style="color:red;">*</span></b></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        <input type="text" ng-model="Users.name" class="form-control input-md" tabindex="1" required>
+                    </div>
+                </div>
+                <div>
+                    <br/><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <p align="right"><b>e-Mail:<span style="color:red;">*</span></b></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        <input type="email" ng-model="Users.email" class="form-control input-md" tabindex="2" required>
+                    </div>
+                </div>
+                <div>
+                    <br/><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                       <p align="right"><b>Contact no:<span style="color:red;">*</span></b></p>
+                    </div> 
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        <input type="text" ng-model="Users.contactNo" class="form-control input-md" tabindex="3" required>
+                    </div>
+                </div>
+                <div>
+                    <br/><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <p align="right"><b>Gender:<span style="color:red;">*</span></b></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        <input list="gen" ng-model="Users.gender" class="form-control input-md" tabindex="4" placeholder="Select" required>
+                        <datalist id="gen">
+                            <option value="Male">
+                            <option value="Female">
+                            <option value="Other">
+                        </datalist>
+                    </div>
+                </div>
+                <div>
+                    <br/><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <p align="right"><b>Date of Birth:</b></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        <input type="date" ng-model="Users.dob" class="form-control input-md" tabindex="5" >
+                          
+                    </div>
+                </div>
+                <div>
+                    <br/><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <p align="right"><b>Comment:</b></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        <textarea style="height:300px;resize:none;" class="form-control input-md" tabindex="6" ng-model="Users.comment"
+                        maxlength = "100">
+                        
+                        </textarea>
+                    </div>
+                </div>
+                <div>
+                    <br/><br/>
+                </div>
+            </div>
+            <br/>
+            
+            <div class="row">
+                <div class="col-xs-6 col-md-3 col-md-offset-3 col-xs-offset-3">
+                    <button type="submit" class="btn btn-success btn-block btn-md" tabindex="6">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        

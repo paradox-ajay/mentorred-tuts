@@ -1,0 +1,34 @@
+<div class="container" >
+  <center><h2 style="color: #00cc44;font-family: 'Lobster', cursive;">Contact List</h2></center>
+  <hr/>
+  <p ng-show="User.length == 0">There are no contacts here!</p>
+  
+  <table class="table table-bordered" >
+    <thead>
+      <tr>
+        <th style="color:#800000">Name</th>
+        <th style="color:#800000">eMail</th>
+        <th style="color:#800000">Contact</th>
+        <th style="color:#800000">Gender</th>
+        <th style="color:#800000">Date of Birth</th>
+        <th style="color:#800000">Comment</th>
+        <th style="color:#800000">Action</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="(id, Users) in User">
+      <tr>
+        <span style="color:white">
+        <td><b style="color:white;">{{Users.name}}</b></td>
+        <td><b style="color:white;">{{Users.email}}</b></td>
+        <td><b style="color:white;">{{Users.contactNo}}</b></td>
+        <td><b style="color:white;">{{Users.gender}}</b></td>
+        <td><b style="color:white;">{{Users.dob | date : "dd.MM.yy"}}</b></td>
+        <td><b style="color:white;">{{Users.comment}}</b></td></span>
+        <td>  
+        <a  href="#/edit/{{id}}"><img src="img/12.png" style="height:40px;width:40px;"></img></a> |   
+        <a href="#/remove/{{id}}"><img src="img/21.png" style="height:40px;width:40px;"></a>  
+    </td>  
+      </tr>
+     </table>
+</div>
+

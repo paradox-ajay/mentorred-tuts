@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us" ng-app="myApp">
+
+<head>
+<meta charset="utf-8">
+<title>NxtLife Tech</title>
+
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="bower_components/ngToast/dist/ngToast.min.css" type="text/css" />
+		<link rel="stylesheet" href="bower_components/hover/css/hover.css" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/ngToast/dist/ngToast.min.js "></script>
+        <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+</head>
+
+	<body ng-controller="mainCtrl" back-img="img/0.png">
+		<div >
+          <div ng-include="'structure/menu.html' "></div>
+          
+          <div ui-view class="container-fluid"> </div>
+        </div>
+        
+        
+
+	</body>
+</html>
